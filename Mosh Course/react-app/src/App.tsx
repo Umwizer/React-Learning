@@ -17,11 +17,12 @@
 // export default App;
 
 import Alert from "./components/Alert";
-
+import Button from "./components/Button";
 function App() {
   return (
     <div>
       <Alert>"Hello World" </Alert>
+      <Button>My Button</Button>
     </div>
   );
 }
