@@ -16,13 +16,33 @@
 // }
 // export default App;
 
-import { useState } from "react";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+// import { useState } from "react";
+// import Alert from "./components/Alert";
+// import Button from "./components/Button";
+// function App() {
+//   const [person, setPerson] = useState({
+//     firtName: "",
+//     lastName: "",
+//     contact: {
+//       address: {
+//         street: "",
+//       },
+//     },
+//   });
+//   const [isLoading, setLoading] = useState(false);
+//   return <div></div>;
+// }
+// export default App;
+
+import Message from "./Message";
+
 function App() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const fullName = firstName + "" + lastName;
-  return <div>{fullName}</div>;
+  return (
+    <div>
+      <Message />
+      <Message />
+      <Message />
+    </div>
+  );
 }
 export default App;
