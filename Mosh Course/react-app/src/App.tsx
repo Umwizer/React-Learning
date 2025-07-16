@@ -40,8 +40,6 @@ function App() {
   return (
     <div>
       <Message />
-      <Message />
-      <Message />
     </div>
   );
 }
