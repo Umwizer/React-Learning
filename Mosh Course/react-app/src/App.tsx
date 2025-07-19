@@ -89,4 +89,7 @@ function App1() {
     { id: 1, title: "Bug1", fixed: false },
     { id: 2, title: "Bugs2", fixed: false },
   ]);
+  const handleClick = () => {
+    setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
+  };
 }
