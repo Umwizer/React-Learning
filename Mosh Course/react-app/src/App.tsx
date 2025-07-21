@@ -28,13 +28,16 @@
 // }
 // export default App1;
 
+import CapturingUserClicks from "./components/Exercises/CapturingUserClicks";
 import HelloWorld from "./components/Exercises/HelloWorld";
 import Form from "./components/form";
+
 function App() {
   return (
     <div>
       {/* <Form /> */}
-      <HelloWorld />
+      {/* <HelloWorld /> */}
+      <CapturingUserClicks />
     </div>
   );
 }
