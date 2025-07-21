@@ -27,11 +27,14 @@
 //   );
 // }
 // export default App1;
+
+import HelloWorld from "./components/Exercises/HelloWorld";
 import Form from "./components/form";
 function App() {
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
+      <HelloWorld />
     </div>
   );
 }
