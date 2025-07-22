@@ -31,13 +31,32 @@
 import CapturingUserClicks from "./components/Exercises/CapturingUserClicks";
 import HelloWorld from "./components/Exercises/HelloWorld";
 import Form from "./components/form";
-
+import CustomComponents from "./components/Exercises/CustomComponents";
+import { useState } from "react";
 function App() {
+  const [arr, setArr] = useState({
+    "1": "red",
+    "2": "yellow",
+    "3": "green",
+  });
+
+  const handleClick = (id: string) => {
+    alert(`Clicked Button ${id}`);
+  };
+
   return (
-    <div>
+    <div className="p-4">
       {/* <Form /> */}
       {/* <HelloWorld /> */}
-      <CapturingUserClicks />
+      {/* <CapturingUserClicks /> */}
+      {Object.entries(arr).map(([id, color]) => (
+        <CustomComponents
+          key={id}
+          id={id}
+          color={color}
+          onClick={() => handleClick(id)}
+        />
+      ))}
     </div>
   );
 }

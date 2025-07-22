@@ -8,7 +8,6 @@
 // Take note that capturing events such as clicks is done differently in React than it is in JavaScript.
 
 import React from "react";
-import Alert from "../Alert";
 
 const CapturingUserClicks = () => {
   const handleClick = () => {
