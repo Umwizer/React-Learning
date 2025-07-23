@@ -33,6 +33,7 @@ import HelloWorld from "./components/Exercises/HelloWorld";
 import Form from "./components/form";
 import CustomComponents from "./components/Exercises/CustomComponents";
 import { useState } from "react";
+import StateAndProps from "./components/Exercises/StateAndProps";
 function App() {
   const [arr, setArr] = useState({
     "1": "red",
@@ -46,8 +47,8 @@ function App() {
 
   return (
     <div className="p-4">
-      {/* <Form /> */}
-      {/* <HelloWorld /> */}
+      {/* {<Form />} */}
+      {/*<HelloWorld /> */}
       {/* <CapturingUserClicks /> */}
       {Object.entries(arr).map(([id, color]) => (
         <CustomComponents
@@ -57,6 +58,7 @@ function App() {
           onClick={() => handleClick(id)}
         />
       ))}
+      <StateAndProps />
     </div>
   );
 }
