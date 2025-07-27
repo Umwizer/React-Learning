@@ -31,9 +31,11 @@
 import CapturingUserClicks from "./components/Exercises/CapturingUserClicks";
 import HelloWorld from "./components/Exercises/HelloWorld";
 import Form from "./components/form";
+import AListAndRendering from "./components/Exercises/AListAndRendering";
 import CustomComponents from "./components/Exercises/CustomComponents";
 import { useState } from "react";
 import StateAndProps from "./components/Exercises/StateAndProps";
+import Counter from "./components/Exercises/Counter";
 function App() {
   const [arr, setArr] = useState({
     "1": "red",
@@ -59,6 +61,8 @@ function App() {
         />
       ))}
       <StateAndProps />
+      <AListAndRendering />
+      <Counter />
     </div>
   );
 }
