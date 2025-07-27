@@ -36,6 +36,8 @@ import CustomComponents from "./components/Exercises/CustomComponents";
 import { useState } from "react";
 import StateAndProps from "./components/Exercises/StateAndProps";
 import Counter from "./components/Exercises/Counter";
+import TextState from "./components/Exercises/TextField";
+import MyCheckBox from "./components/Exercises/CheckBox";
 function App() {
   const [arr, setArr] = useState({
     "1": "red",
@@ -63,6 +65,8 @@ function App() {
       <StateAndProps />
       <AListAndRendering />
       <Counter />
+      <TextState />
+      <MyCheckBox />
     </div>
   );
 }
