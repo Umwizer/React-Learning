@@ -40,6 +40,7 @@ import TextState from "./components/Exercises/TextField";
 import MyCheckBox from "./components/Exercises/CheckBox";
 import Forms from "./components/Exercises/Form";
 import UserList from "./components/Exercises/UserList";
+import CounterTitle from "./components/Exercises/CounterTitle";
 function App() {
   const [arr, setArr] = useState({
     "1": "red",
@@ -71,6 +72,7 @@ function App() {
       <MyCheckBox />
       <Forms />
       <UserList />
+      <CounterTitle />
     </div>
   );
 }
