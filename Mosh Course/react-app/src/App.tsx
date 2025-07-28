@@ -40,39 +40,44 @@ import TextState from "./components/Exercises/TextField";
 import MyCheckBox from "./components/Exercises/CheckBox";
 import Forms from "./components/Exercises/Form";
 import UserList from "./components/Exercises/UserList";
+import Formss from "./components/Exercises/formss";
 import CounterTitle from "./components/Exercises/CounterTitle";
 function App() {
-  const [arr, setArr] = useState({
-    "1": "red",
-    "2": "yellow",
-    "3": "green",
-  });
+  // const [arr, setArr] = useState({
+  //   "1": "red",
+  //   "2": "yellow",
+  //   "3": "green",
+  // });
 
-  const handleClick = (id: string) => {
-    alert(`Clicked Button ${id}`);
-  };
+  // const handleClick = (id: string) => {
+  //   alert(`Clicked Button ${id}`);
+  // };
 
+  // return (
+  //   <div className="p-4">
+  //     {/* {<Form />} */}
+  //     {/*<HelloWorld /> */}
+  //     {/* <CapturingUserClicks /> */}
+  //     {Object.entries(arr).map(([id, color]) => (
+  //       <CustomComponents
+  //         key={id}
+  //         id={id}
+  //         color={color}
+  //         onClick={() => handleClick(id)}
+  //       />
+  //     ))}
+  //     <StateAndProps />
+  //     <AListAndRendering />
+  //     <Counter />
+  //     <TextState />
+  //     <MyCheckBox />
+  //     <Forms />
+  //     <UserList />
+  //     <CounterTitle />
+  //   </div>
   return (
-    <div className="p-4">
-      {/* {<Form />} */}
-      {/*<HelloWorld /> */}
-      {/* <CapturingUserClicks /> */}
-      {Object.entries(arr).map(([id, color]) => (
-        <CustomComponents
-          key={id}
-          id={id}
-          color={color}
-          onClick={() => handleClick(id)}
-        />
-      ))}
-      <StateAndProps />
-      <AListAndRendering />
-      <Counter />
-      <TextState />
-      <MyCheckBox />
-      <Forms />
-      <UserList />
-      <CounterTitle />
+    <div>
+      <Formss />
     </div>
   );
 }
