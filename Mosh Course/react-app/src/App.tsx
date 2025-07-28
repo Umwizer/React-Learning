@@ -39,6 +39,7 @@ import Counter from "./components/Exercises/Counter";
 import TextState from "./components/Exercises/TextField";
 import MyCheckBox from "./components/Exercises/CheckBox";
 import Forms from "./components/Exercises/Form";
+import UserList from "./components/Exercises/UserList";
 function App() {
   const [arr, setArr] = useState({
     "1": "red",
@@ -69,6 +70,7 @@ function App() {
       <TextState />
       <MyCheckBox />
       <Forms />
+      <UserList />
     </div>
   );
 }
