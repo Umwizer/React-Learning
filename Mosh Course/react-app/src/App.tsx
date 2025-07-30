@@ -42,6 +42,7 @@ import Forms from "./components/Exercises/Form";
 import UserList from "./components/Exercises/UserList";
 import Formss from "./components/Exercises/formss";
 import CounterTitle from "./components/Exercises/CounterTitle";
+import CreatingJokes from "./components/Exercises/Json";
 function App() {
   // const [arr, setArr] = useState({
   //   "1": "red",
@@ -78,6 +79,7 @@ function App() {
   return (
     <div>
       <Formss />
+      <CreatingJokes />
     </div>
   );
 }
