@@ -1,13 +1,7 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function App() {
-  const ref = useRef<HTMLInputElement>(null);
-  //side effect
-  if (ref.current) ref.current.focus();
-  return (
-    <div>
-      <input ref={ref} type="text" className="form-control" />
-    </div>
-  );
+  useEffect(() => {});
+  return <div></div>;
 }
 export default App;
