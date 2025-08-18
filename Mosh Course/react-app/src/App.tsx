@@ -1,7 +1,12 @@
-import { useEffect, useRef } from "react";
+// import CheckPasswordStrenght from "./components/MentalModel/CheckPasswordStrenght";
+import CartShopping from "./components/MentalModel/CartShopping";
 
 function App() {
-  useEffect(() => {});
-  return <div></div>;
+  return (
+    <div>
+      {/* <CheckPasswordStrenght /> */}
+      <CartShopping />
+    </div>
+  );
 }
 export default App;
