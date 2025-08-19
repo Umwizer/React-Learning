@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Quote {
   text: string;
@@ -39,17 +39,30 @@ const quotes: Quote[] = [
 ];
 const QuoteGenerator = () => {
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(false);
   const goNext = () => {
     if (index < quotes.length - 1) setIndex(index + 1);
   };
   const goPrevious = () => {
     if (index > 0) setIndex(index - 1);
   };
+  useEffect(() => {
+    setFade(true);
+    const timer = setTimeout(() => setFade(false), 300);
+    return () => clearTimeout(timer);
+  }, [index]);
   const currentQuote = quotes[index];
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-lg rounded-xl p-8 w-96 text-center">
-        <p className="text-lg italic mb-4">"{currentQuote.text}"</p>
+        <p
+          className={`text-lg italic mb-4 transition-opacity duration-300 ${
+            fade ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {currentQuote.text}
+        </p>
+
         <p className="font-normal mb-2">- {currentQuote.author}</p>
         <p className="text-sm text-gray-400 mb-6">{currentQuote.category}</p>
         <div className="flex justify-between">
