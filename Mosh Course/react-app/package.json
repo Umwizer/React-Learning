@@ -11,8 +11,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "immer": "^9.0.19",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.62.0",
     "react-icons": "^5.5.0"
   },

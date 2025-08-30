@@ -2,6 +2,7 @@
 import CartShopping from "./components/MentalModel/CartShopping";
 import DarkMode from "./components/MentalModel/DarkMode";
 import QuoteGenerator from "./components/MentalModel/QuoteGenerator";
+
 import "./index.css";
 function App() {
   return (
