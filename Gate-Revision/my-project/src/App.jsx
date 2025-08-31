@@ -1,3 +1,9 @@
+import useStateHook from "./components/useStateHook";
+
 export default function App() {
-  return <div></div>;
+  return (
+    <div>
+      <useStateHook />
+    </div>
+  );
 }
