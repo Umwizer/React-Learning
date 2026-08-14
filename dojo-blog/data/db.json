@@ -1,0 +1,17 @@
+
+{
+    "blogs":[
+        {
+            "title":"My First Blog",
+            "Body":"Why do we use it\nIt is long established fact that reader wil be destracted",
+            "author":"Ruth",
+            "id":1        
+        },
+        {
+            "title":"Opening party",
+            "body":"Why do we use it\nIt is a long established fact that a reader will be distraced",
+            "author":"Mwizerwa",
+            "id":2
+        }
+    ]
+}
